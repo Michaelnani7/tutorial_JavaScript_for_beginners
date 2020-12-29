@@ -11,12 +11,14 @@
 }
 
 /*  ====== End Global Rules ======*/
-*/
 
 /* ====== Start Challenge 1: Your Age in Days Project ======*/
 
 .container-1 {
   border: 1px solid var(--black);
+  width: 75%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .flex-box-container-1 {
