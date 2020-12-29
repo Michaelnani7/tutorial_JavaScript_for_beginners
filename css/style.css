@@ -1,0 +1,36 @@
+/* ====== Start Global Rules ======*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+
+:root {
+  --black: #000;
+}
+
+/*  ====== End Global Rules ======*/
+*/
+
+/* ====== Start Challenge 1: Your Age in Days Project ======*/
+
+.container-1 {
+  border: 1px solid var(--black);
+}
+
+.flex-box-container-1 {
+  display: flex;
+  border: 1px solid var(--black);
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-box-container-1 div {
+  padding: 10px;
+  border: 1px solid;
+  align-items: center;
+}
+
+/* ====== End Challenge 1 ======*/
