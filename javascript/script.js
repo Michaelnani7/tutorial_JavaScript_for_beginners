@@ -15,3 +15,5 @@ function ageInDays(p) {
 function restAge() {
   document.getElementById("YourAgeInDays").remove();
 }
+
+// Challenge 1: Cat Generator

@@ -8,6 +8,7 @@
 
 :root {
   --black: #000;
+  --red: #f00;
 }
 
 /*  ====== End Global Rules ======*/
@@ -36,3 +37,24 @@
 }
 
 /* ====== End Challenge 1 ======*/
+
+/* ====== Start Challenge 2 Cat Generator Project ======*/
+
+.container-2 {
+  border: 1px solid var(--red);
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-box-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  min-height: 60%;
+  justify-content: space-around;
+}
+.flex-box-container-2 img {
+  padding: 10px;
+}
+/* ====== End Challenge 2 ======*/
