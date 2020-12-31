@@ -37,14 +37,14 @@ function rpsGame(yourChoice) {
   // console.log(humanChoice);
 
   let botChoice = numberToChoice(randomToRpsInt());
-  console.log("Computer Choice " + botChoice);
+  // console.log("Computer Choice " + botChoice);
 
   let result = decideWinner(humanChoice, botChoice);
   // console.log(result);
 
   /* {"message" : "you won", "color" : "green"} */
   let message = finalMessage(result);
-  // console.log(message);
+  console.log(message);
 
   rpsfrontEnd(yourChoice.id, botChoice, message);
 }
@@ -60,7 +60,7 @@ function numberToChoice(number) {
 }
 
 function decideWinner(yourChoice, computerChoice) {
-  const rpsDataBase = {
+  let rpsDataBase = {
     rock: { scissor: 1, rock: 0.5, paper: 0 },
     paper: { rock: 1, paper: 0.5, scissor: 0 },
     scissor: { paper: 1, scissor: 0.5, rock: 0 },
