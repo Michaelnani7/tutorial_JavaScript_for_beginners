@@ -15,9 +15,10 @@
 
 /*  ====== End Global Rules ======*/
 
-/* ====== Start Challenge 1: Your Age in Days Project ======*/
+/* ====== Start Challenges ======*/
 
-.container-1 {
+.container-1,
+.container-2 {
   border: 1px solid var(--black);
   width: 75%;
   margin: 0 auto;
@@ -25,7 +26,9 @@
   text-align: center;
 }
 
-.flex-box-container-1 {
+.flex-box-container-1,
+.flex-box-container-2 {
+  /* flex-direction: row; */
   display: flex;
   border: 1px solid var(--black);
   padding: 10px;
@@ -39,26 +42,7 @@
   align-items: center;
 }
 
-/* ====== End Challenge 1 ======*/
-
-/* ====== Start Challenge 2 Cat Generator Project ======*/
-
-.container-2 {
-  border: 1px solid var(--red);
-  width: 75%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.flex-box-container-2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: 1px solid var(--blue);
-}
-
 .flex-box-container-2 img {
-  padding: 10px;
-  border: 1px solid var(--green);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+  margin: 10px;
 }
-/* ====== End Challenge 2 ======*/
