@@ -26,4 +26,19 @@ function GenerateCat() {
 
   document.getElementById("flex-cat-generate").appendChild(img);
   console.log(document.getElementById("flex-cat-generate"));
+  console.log(randomToRpsInt());
+}
+
+// Challenge 3:  Rock Paper Scissors Project
+
+function rpsGame(yourChoice) {
+  let humanChoice, botChoice;
+  // humanChoice = yourChoice.Id;
+  // botChoice
+  // result =
+}
+
+console.log(randomToRpsInt());
+function randomToRpsInt() {
+  return Math.floor(Math.random() * 3);
 }
