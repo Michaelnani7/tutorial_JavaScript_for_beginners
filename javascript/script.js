@@ -46,7 +46,7 @@ function rpsGame(yourChoice) {
   let message = finalMessage(result);
   console.log(message);
 
-  rpsfrontEnd(yourChoice.id, botChoice, message);
+  rpsfrontEnd(humanChoice, botChoice, message);
 }
 
 // Generate random number
@@ -75,7 +75,7 @@ function decideWinner(yourChoice, computerChoice) {
 }
 
 function finalMessage(yourScore, computerScore) {
-  if (yourScore === 0) {
+  if (yourScore === 0 && computerScore === 1) {
     return { message: "You Lost!", color: "red" };
   } else if (yourScore === 0.5) {
     return { message: "You tied! ", color: "yellow" };
