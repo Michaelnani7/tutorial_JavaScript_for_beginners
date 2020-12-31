@@ -7,6 +7,7 @@ function ageInDays(p) {
   const textAnswer = document.createTextNode(
     "You Are now " + YourAgeInDays + " days"
   );
+
   h2.setAttribute("id", "YourAgeInDays");
   h2.appendChild(textAnswer);
   document.getElementById("flex-box-result").appendChild(h2);
@@ -16,7 +17,7 @@ function restAge() {
   document.getElementById("YourAgeInDays").remove();
 }
 
-// Challenge 1: Cat Generator Project
+// Challenge 2: Cat Generator Project
 
 function GenerateCat() {
   let img = document.createElement("img");
@@ -32,13 +33,35 @@ function GenerateCat() {
 // Challenge 3:  Rock Paper Scissors Project
 
 function rpsGame(yourChoice) {
-  let humanChoice, botChoice;
-  // humanChoice = yourChoice.Id;
-  // botChoice
-  // result =
+  let humanChoice, botChoice, result;
+  humanChoice = yourChoice.id;
+  console.log(humanChoice);
+  botChoice = numberToChoice(randomToRpsInt());
+  // console.log(botChoice);
+  result = decideWinner(humanChoice, botChoice);
+  // console.log(result);
 }
 
-console.log(randomToRpsInt());
+// Generate random number
 function randomToRpsInt() {
   return Math.floor(Math.random() * 3);
+}
+
+function numberToChoice(number) {
+  return ["rock", "paper", "scissors"][number];
+}
+
+function decideWinner(yourChoice, computerChoice) {
+  let rpsDataBase = {
+    rock: { scissors: 1, rockL: 0.5, paper: 0 },
+    paper: { rock: 1, paper: 0.5, scissors: 0 },
+    scissors: { paper: 1, scissors: 0.5, rock: 0 },
+  };
+
+  console.log(rpsDataBase[computerChoice][yourChoice]);
+  let yourScore = rpsDataBase[yourChoice][computerChoice];
+  let computerScore = rpsDataBase[computerChoice][yourChoice];
+
+  return [yourScore][computerScore];
+  // console.log(yourChoice);
 }
