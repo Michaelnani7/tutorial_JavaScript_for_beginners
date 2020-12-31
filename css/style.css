@@ -9,6 +9,8 @@
 :root {
   --black: #000;
   --red: #f00;
+  --blue: #00f;
+  --green: #0f0;
 }
 
 /*  ====== End Global Rules ======*/
@@ -19,7 +21,8 @@
   border: 1px solid var(--black);
   width: 75%;
   margin: 0 auto;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
 }
 
 .flex-box-container-1 {
@@ -50,11 +53,12 @@
 .flex-box-container-2 {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid blue;
-  min-height: 60%;
   justify-content: space-around;
+  border: 1px solid var(--blue);
 }
+
 .flex-box-container-2 img {
   padding: 10px;
+  border: 1px solid var(--green);
 }
 /* ====== End Challenge 2 ======*/

@@ -16,4 +16,14 @@ function restAge() {
   document.getElementById("YourAgeInDays").remove();
 }
 
-// Challenge 1: Cat Generator
+// Challenge 1: Cat Generator Project
+
+function GenerateCat() {
+  let img = document.createElement("img");
+  //Generate random image
+  img.src =
+    "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
+
+  document.getElementById("flex-cat-generate").appendChild(img);
+  console.log(document.getElementById("flex-cat-generate"));
+}
